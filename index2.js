@@ -6,14 +6,11 @@ const ingredients = [
     'Зелень',
     'Приправи',
 ];
-   
-const refsIngredients = document.querySelector('.ingredients');
+const refsIngredients = document.querySelector('#ingredients');   
 
-for (const ingredient in ingredients) {
-    const item = document.createElement('li');
-
-    ingredients[ingredient].forEach(el => {
-        el.textContent = el;
-    })
+for (const item of ingredients) {
+    const elLi = document.createElement('li')
+    elLi.textContent = item;
+    refsIngredients.appendChild(elLi);
+    // console.log(elLi)
 }
-

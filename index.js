@@ -3,9 +3,6 @@ function findCategories() {
     const categories = document.querySelectorAll('.categories > .item');
     console.log(`У списку ${categories.length} категорії.`);
 
-
-
-
   categories.forEach(item => {
     const list = item.querySelector('ul');
     const items = list.querySelectorAll('li.categories-list_item'); 
